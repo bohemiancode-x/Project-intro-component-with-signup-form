@@ -10,14 +10,17 @@ const emailpattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 email.addEventListener('keyup', () => {
     if(emailpattern.test(email.value)){
         email.style.border = "2px solid #38cc8c"
-        
+        email.style.color = "#3bcc8c"
+        email.style.backgroundSize = "0px";
+        email.nextSibling.nextSibling.style.display = 'none';
     } else {
-     email.style.backgroundSize = "20px 20px";
-     email.style.border = "2px solid #ff7a7a"
-     email.nextSibling.nextSibling.style.display = 'block';
+        email.style.color = "#ff7a7a"
+        email.style.backgroundSize = "20px 20px";
+        email.style.border = "2px solid #ff7a7a"
+        email.nextSibling.nextSibling.style.display = 'block';
     }
  })
- 
+
 let i;
 //display error for empty form fields
 form.addEventListener('submit', e => {
