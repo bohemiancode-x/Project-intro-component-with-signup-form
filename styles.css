@@ -86,7 +86,7 @@ main {
 }
 .claim-free-trial {
     margin-top: 20px;
-    height: 50vh;
+    height: 60vh;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -105,6 +105,23 @@ main {
     font-weight: bold;
     font-size: 16px;
     padding: 20px;
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-size: 0px;
+    background-position: 280px;
+}
+.claim-free-trial .errormsg {
+    font-size: 9.5px;
+    color: var(--Red);
+    font-style: italic;
+    font-weight: bold;
+    text-align: end;
+    width: 100%;
+    margin-top: -5px;
+    display: none;
+}
+.claim-free-trial #email:focus {
+    outline: var(--Grayish-Blue);
 }
 .claim-free-trial .claim-button {
     height: 60px;

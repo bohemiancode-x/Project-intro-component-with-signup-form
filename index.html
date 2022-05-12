@@ -24,12 +24,17 @@
             Try it free 7 days <span>then $20/mo. thereafter</span>
           </p>
         </button>
+        
         <form action="" class="claim-free-trial">
-          <input type="text" placeholder="First Name" class="form-child">
+          <input type="text" placeholder="First Name" class="form-child" id="firstname">
+          <div class="errormsg">First name cannot be empty</div>
           <input type="text" placeholder="Last Name" class="form-child">
-          <input type="text" placeholder="Email Address" class="form-child">
+          <div class="errormsg">Last name cannot be empty</div>
+          <input type="text" placeholder="Email Address" id="email" class="form-child">
+          <div class="errormsg">Looks like this is not an email</div>
           <input type="password" placeholder="Password" class="form-child">
-          <input type="button" value="CLAIM YOUR FREE TRIAL" class="claim-button">
+          <div class="errormsg">Password cannot be empty</div>
+          <input type="submit" value="CLAIM YOUR FREE TRIAL" class="claim-button">
           <P>By clicking the button, you are agreeing to our <span>Terms and Services</span></P>
         </form>
       </div>
